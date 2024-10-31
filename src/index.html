@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+  <style>
+    .box{
+      animation: slideUp 3.3s infinite;
+    }
+    @keyframes slideUp {
+      from{
+        transform: translateX(0%);
+      }
+      to{
+        transform: translateX(100%);
+      }
+    }
+  </style>
+  <!-- --------------------------nav-bar------------------------------ -->
+  <nav class="sm: bg-white h-[80px] flex justify-center md:bg-slate-800">
+    <!-- -------------------------------Logo---------------------------- -->
+    <div class="text-white text-[4rem] pt-[5px] md:pl-[50px] pl-[110px]">
+      <img src="414503711_122146098512071890_8935503329298773907_n-removebg-preview.png" width="75px">
+    </div>
+    <!-- -----------------------------words------------------------------- -->
+    <div class="text-blue-500 hidden box md:flex " id="navMenu">
+      <ul class="flex space-x-6 pt-[34px] pl-[200px] text-[17px] ">
+        <li class="hover:text-white"><a href="#">About Us</a></li>
+        <li class="hover:text-white"><a href="#">Events</a></li>
+        <li class="hover:text-white"><a href="#">Ministries</a></li>
+        <li class="hover:text-white"><a href="#">Gallary</a></li>
+        <li class="hover:text-white"><a href="#">Contact Us</a></li>
+      </ul>
+      <!-- ----------------------border--------------------------------- -->
+    </div>
+    <div class="flex h-[60px] gap-5 md:pl-[220px] pt-[25px] text-white md:text-[17px] items-center pl-[50px] text-[17px]">
+      <div class="border w-[150px] h-[50px] border-blue-600  flex-col justify-center pl-[30px] text-blue-600 hover:bg-blue-600 hover:text-white hidden md:flex"><a href="#">Get involved</a></div>
+      <div class="border w-[100px] h-[50px] bg-blue-600 border-blue-600 flex justify-center pt-[10px] text-white rounded-md hover:bg-blue-400  "><a href="#">Join us Live</a></div>
+    </div>
+  </nav>
+</body>
+</html>
